@@ -1,0 +1,21 @@
+{
+  "name": "awesome-desktop-pets",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "tsx scripts/validate-pets.ts",
+    "package:pets": "tsx scripts/package-pets.ts",
+    "build:index": "tsx scripts/build-index.ts",
+    "build": "npm run validate && npm run package:pets && npm run build:index",
+    "new-pet": "tsx scripts/new-pet.ts"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/node": "^22.10.1",
+    "archiver": "^7.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
+
