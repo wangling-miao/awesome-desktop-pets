@@ -1,8 +1,8 @@
 {
   "id": "venti-bard",
-  "name": "Venti Bard",
-  "displayName": "Venti Bard",
-  "version": "1.0.0",
+  "name": "温迪",
+  "displayName": "温迪",
+  "version": "1.0.1",
   "author": "亡灵",
   "description": "A tiny wind-bard pet inspired by Venti, with teal braids, a green cape, and a bright bard hat.",
   "tags": ["bard", "fantasy", "cute"],

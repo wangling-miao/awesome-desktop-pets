@@ -1,4 +1,4 @@
-# Venti Bard
+# 温迪
 
 A tiny wind-bard desktop pet inspired by Venti, with teal braids, a green cape, and a bright bard hat.
 
@@ -16,4 +16,3 @@ This is a fan-art style sample package. Before redistributing it publicly, verif
 ## License
 
 Fan-art sample, redistribution requires rights review.
-
