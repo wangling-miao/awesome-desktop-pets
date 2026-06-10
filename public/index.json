@@ -1,8 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-10T04:49:49.852Z",
+  "generatedAt": "2026-06-10T11:27:24.316Z",
   "repository": "https://github.com/wangling-miao/awesome-desktop-pets",
   "pets": [
+    {
+      "id": "nahida-sprout",
+      "name": "纳西妲",
+      "displayName": "纳西妲",
+      "version": "1.0.0",
+      "author": "亡灵",
+      "description": "一只纳西妲灵感的 1x Q 版桌宠，带有四叶眼和草木气息。",
+      "tags": [
+        "dendro",
+        "sprout",
+        "cute"
+      ],
+      "license": "Fan-art sample, redistribution requires rights review",
+      "preview": "pets/nahida-sprout/preview.gif",
+      "previewImage": "pets/nahida-sprout/preview.png",
+      "previewWebp": "pets/nahida-sprout/preview.webp",
+      "manifest": "pets/nahida-sprout/pet.json",
+      "download": "downloads/nahida-sprout-v1.0.0.zip",
+      "downloadSize": 2626588,
+      "downloadSha256": "0174ce6aba762b664f0bc8c8a788793b404a354a432c128c92c9f34ccccc3e87",
+      "format": "hatch-pet-compatible",
+      "resolution": "1x",
+      "createdAt": "2026-06-10"
+    },
     {
       "id": "venti-bard",
       "name": "温迪",

@@ -1,0 +1,26 @@
+{
+  "id": "nahida-sprout",
+  "name": "纳西妲",
+  "displayName": "纳西妲",
+  "version": "1.0.0",
+  "author": "亡灵",
+  "description": "一只纳西妲灵感的 1x Q 版桌宠，带有四叶眼和草木气息。",
+  "tags": ["dendro", "sprout", "cute"],
+  "license": "Fan-art sample, redistribution requires rights review",
+  "preview": "preview.gif",
+  "previewImage": "preview.png",
+  "previewWebp": "preview.webp",
+  "format": "hatch-pet-compatible",
+  "resolution": "1x",
+  "createdAt": "2026-06-10",
+  "spritesheetPath": "spritesheet.webp",
+  "spritesheets": {
+    "1x": "spritesheet.webp"
+  },
+  "cellSize": {
+    "width": 192,
+    "height": 208
+  },
+  "sourceScale": 1,
+  "pixelated": false
+}
