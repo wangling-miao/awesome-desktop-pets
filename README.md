@@ -7,8 +7,6 @@ Desktop Pet Launcher 的社区桌宠图鉴仓库。这里负责投稿、校验�
 - GitHub Pages index: `https://wangling-miao.github.io/awesome-desktop-pets/index.json`
 - 仓库: `https://github.com/wangling-miao/awesome-desktop-pets`
 
-如果你之后把域名绑定到 `pet.nether.top`，可以把启动器默认索引地址改成 `https://pet.nether.top/index.json` 或 `https://pet.nether.top/pets/index.json`。
-
 ## 仓库结构
 
 ```text
