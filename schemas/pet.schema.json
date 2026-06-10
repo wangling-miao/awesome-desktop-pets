@@ -70,6 +70,10 @@
       "type": "string",
       "const": "preview.png"
     },
+    "previewWebp": {
+      "type": "string",
+      "const": "preview.webp"
+    },
     "download": {
       "type": "string"
     },
@@ -123,4 +127,3 @@
     }
   }
 }
-

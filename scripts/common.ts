@@ -28,6 +28,7 @@ export interface PetManifest {
   license: string;
   preview: "preview.gif";
   previewImage?: "preview.png";
+  previewWebp?: "preview.webp";
   download?: string;
   format: PetFormat;
   resolution: PetResolution;
@@ -94,4 +95,3 @@ export async function sha256File(filePath: string): Promise<string> {
 export async function fileSize(filePath: string): Promise<number> {
   return (await stat(filePath)).size;
 }
-

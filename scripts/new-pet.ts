@@ -27,6 +27,7 @@ const manifest = {
   license: "CC-BY-4.0",
   preview: "preview.gif",
   previewImage: "preview.png",
+  previewWebp: "preview.webp",
   format: "hatch-pet-compatible",
   resolution: "1x",
   createdAt: today,
@@ -55,6 +56,6 @@ await writeFile(
 );
 await copyFile(path.join(templateDir, "preview.png"), path.join(targetDir, "preview.png"));
 await copyFile(path.join(templateDir, "preview.gif"), path.join(targetDir, "preview.gif"));
+await copyFile(path.join(templateDir, "preview.webp"), path.join(targetDir, "preview.webp"));
 
 console.log(`created pets/${id}`);
-

@@ -1,4 +1,5 @@
 import { copyFile, mkdir, rm, writeFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import path from "node:path";
 import {
   downloadsDir,
@@ -22,6 +23,7 @@ interface GalleryIndexPet {
   license: string;
   preview: string;
   previewImage: string;
+  previewWebp?: string;
   manifest: string;
   download: string;
   downloadSize: number;
@@ -52,6 +54,10 @@ async function main() {
     await copyFile(path.join(record.dirPath, "preview.png"), path.join(publicPetDir, "preview.png"));
     await copyFile(path.join(record.dirPath, "preview.gif"), path.join(publicPetDir, "preview.gif"));
     await copyFile(path.join(record.dirPath, "pet.json"), path.join(publicPetDir, "pet.json"));
+    const previewWebpPath = path.join(record.dirPath, "preview.webp");
+    if (existsSync(previewWebpPath)) {
+      await copyFile(previewWebpPath, path.join(publicPetDir, "preview.webp"));
+    }
 
     const zipName = petZipName(manifest);
     const zipPath = path.join(downloadsDir, zipName);
@@ -68,6 +74,9 @@ async function main() {
       license: manifest.license,
       preview: relativeUrl("pets", manifest.id, "preview.gif"),
       previewImage: relativeUrl("pets", manifest.id, "preview.png"),
+      previewWebp: existsSync(previewWebpPath)
+        ? relativeUrl("pets", manifest.id, "preview.webp")
+        : undefined,
       manifest: relativeUrl("pets", manifest.id, "pet.json"),
       download,
       downloadSize: await fileSize(zipPath),
@@ -92,4 +101,3 @@ async function main() {
 }
 
 void main();
-
